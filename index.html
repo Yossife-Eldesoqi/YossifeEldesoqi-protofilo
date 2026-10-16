@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eng Yossef ELdesoqi | Portfolio</title>
+    <!-- خط عربي أنيق من جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- مكتبة الأيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(15, 23, 42, 0.9);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #1e293b;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #38bdf8;
+            direction: ltr;
+        }
+
+        nav a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin-right: 25px;
+            transition: 0.3s;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 70%);
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: #f1f5f9;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+            direction: ltr;
+            display: inline-block;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-bottom: 30px;
+            max-width: 650px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+            transform: translateY(-2px);
+        }
+
+        section {
+            padding: 100px 8% 50px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 50px;
+            color: #f1f5f9;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #38bdf8;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 30px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .project-card i {
+            font-size: 2.5rem;
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .project-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #f8fafc;
+        }
+
+        .project-card p {
+            color: #94a3b8;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .contact {
+            text-align: center;
+            background: #1e293b;
+            margin: 50px 8%;
+            padding: 50px;
+            border-radius: 16px;
+            border: 1px solid #334155;
+        }
+
+        .contact p {
+            color: #94a3b8;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .contact-email {
+            font-size: 1.3rem;
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 700;
+            direction: ltr;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+            border-top: 1px solid #1e293b;
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الهيدر وقائمة التنقل -->
+    <header>
+        <div class="logo">Eng Yossef ELdesoqi</div>
+        <nav>
+            <a href="#hero">الرئيسية</a>
+            <a href="#projects">المشاريع</a>
+            <a href="#contact">تواصل معي</a>
+        </nav>
+    </header>
+
+    <!-- الواجهة الرئيسية -->
+    <section id="hero" class="hero">
+        <h1>مرحباً، أنا <span>Eng Yossef ELdesoqi</span></h1>
+        <p>مهندس برمجيات متخصص في تطوير وبناء الأنظمة البرمجية المتكاملة، وتوفير حلول برمجية ذكية تلبي متطلبات العمل بكفاءة عالية.</p>
+        <a href="#projects" class="btn">استعرض مشاريعي</a>
+    </section>
+
+    <!-- قسم المشاريع -->
+    <section id="projects">
+        <h2>مشاريعي البارزة</h2>
+        <div class="projects-grid">
+            <!-- المشروع الأول -->
+            <div class="project-card">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>نظام إدارة المطاعم (Restaurant System)</h3>
+                <p>نظام متكامل لإدارة عمليات المطعم، يتضمن تسجيل الطلبات، إدارة القائمة، حساب الفواتير، ومتابعة حركة الطاولات والمخزون بدقة وسهولة.</p>
+            </div>
+
+            <!-- المشروع الثاني -->
+            <div class="project-card">
+                <i class="fa-solid fa-pills"></i>
+                <h3>نظام إدارة الصيدليات (Pharmacy System)</h3>
+                <p>برنامج لتنظيم عمل الصيدليات، يتيح البحث السريع عن الأدوية، تتبع تواريخ الصلاحية، مراقبة المخزون، وإدارة فواتير المبيعات وحسابات العملاء.</p>
+            </div>
+
+            <!-- المشروع الثالث -->
+            <div class="project-card">
+                <i class="fa-solid fa-building-columns"></i>
+                <h3>نظام الصراف الآلي (ATM System)</h3>
+                <p>محاكاة برمجية متكاملة لماكينة الصراف الآلي، تدعم عمليات التحقق من الحساب، السحب والإيداع النقدي، الاستعلام عن الرصيد، وتأمين المعاملات.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="contact">
+        <h2>دعنا نلتقي أو نتواصل</h2>
+        <p>يسعدني تلقي استفساراتك أو فرص التعاون المشترك عبر البريد الإلكتروني:</p>
+        <a href="mailto:desoqiyossife@gmail.com" class="contact-email">desoqiyossife@gmail.com</a>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; Eng Yossef ELdesoqi</p>
+    </footer>
+
+</body>
+</html>
